@@ -4,7 +4,9 @@ import json
 from pprint import pprint
 
 import requests
+from dotenv import load_dotenv # <--- ADDITION
 
+load_dotenv() # <--- ADDITION
 API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
