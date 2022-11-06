@@ -1,6 +1,8 @@
-# PMD82-UNEMPLOYMENT-REPORT
+# unemployment-inclass-2022
+
 
 ## Setup
+
 
 Create and activate a virtual environment:
 
@@ -29,23 +31,23 @@ Then create a local ".env" file and provide the key like this:
 ALPHAVANTAGE_API_KEY="_________"
 ```
 
+
 ## Usage
 
 Run an example script:
+
 ```sh
 python app/my_script.py
 ```
 
 Run the unemployment report:
+
 ```sh
-python app/unemployment.py
-```
-# or pass env var from command line:
-ALPHAVANTAGE_API_KEY="______" python app/unemployment.py
+python -m app.unemployment
 ```
 
 Run stocks report:
 
 ```sh
-python app/stocks.py
+python -m app.stocks
 ```
