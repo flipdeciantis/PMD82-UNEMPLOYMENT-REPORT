@@ -25,7 +25,7 @@ def unemployment_dashboard():
         )
     except Exception as err:
         print('OOPS', err)
-
+        breakpoint()
         #flash("Unemployment Data Error. Please try again!", "danger")
         return redirect("/")
 
